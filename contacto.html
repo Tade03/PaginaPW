@@ -45,5 +45,20 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            fetch('js/config.json')
+            .then((response) => response.json())
+            .then((json) => {
+                const id = json["id"].toString();
+                emailjs.init(id);
+            });
+        })();
+    </script>
+    
+
 </body>
 </html>
