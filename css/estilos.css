@@ -75,6 +75,45 @@
   
   /* Clases CSS */
   
+.menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-decoration: none;
+} 
+
+.menu-horizontal > li:hover{
+  background-color: #446132;
+}
+
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: #000000;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+  display: block;
+}
+.menu-vertical li:hover{
+  background-color: #000000;
+}
+
+.menu-vertical li a{
+  display: block;
+  color: #ffffff;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+
   
   /* ID CSS */
   #bienvenida {
