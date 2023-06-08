@@ -1,0 +1,64 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body class="contacto">
+    <dialog id="modal">
+        <div class="modalContent">
+            <h2>Gracias por contactarnos!</h2>
+            <p>Te responderemos lo mas pronto posible!</p>
+            <button id="cerrar">Cerrar</button>
+        </div>
+    </dialog>
+    <a href="index.html" class="volver">Volver al inicio</a>
+    <div class="holder">
+        <div class="imageWithText">
+            <div class="overlayText">
+                <div class="bgImage" style="padding: 0;">
+                    <img src="/media/poseBG.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>Contactanos!</h2>
+                    <p>Si te interesa conocer mas del tema, no dudes en contactarnos!</p>
+                </div>
+            </div>
+        </div>
+        <div class="formDiv">
+            
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="name" placeholder="Nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <label for="mensaje">Telefono:</label>
+                <input type="number" name="phone" id="phone" placeholder="Numero telefonico" maxlength="10" size="10">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="message" id="message" cols="30" rows="6" placeholder="Mensaje"></textarea>
+                <input type="button" value="Enviar" id="enviar">
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            fetch('js/config.json')
+                .then((response) => response.json())
+                .then((json) => {
+                    const id = json["id"].toString();
+                    emailjs.init(id);
+                });
+        })();
+    </script>
+
+
+</body>
+
+</html>

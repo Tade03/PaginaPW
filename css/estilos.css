@@ -119,6 +119,80 @@
   
 }
 
+
+.contacto{
+  background : #8a2be2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+div.holder{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 60%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px 10px 1px -3px rgba(0,0,0,0.1);
+}
+
+div.imageWithText{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin-right: 40px;
+}
+
+.overlayText{
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+  margin: auto 0;
+}
+
+.overlayText div{
+  padding: 50px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.bgImage{
+  width: 100%;
+  height: 100%;
+}   
+
+.bgImage img{
+  width: 100%;
+  height: 50vh;
+}
+
+.text{
+  margin: auto 0;
+}
+
+.volver{
+  position: absolute;
+  top: 0;
+  color: white;
+}
+
+#modal{
+  margin: auto;
+}
+
   
   /* ID CSS */
   #bienvenida {
