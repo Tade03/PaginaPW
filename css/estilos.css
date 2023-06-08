@@ -111,4 +111,41 @@ form input[type="submit"] {
 
 #introduccion article {
   margin:3rem;
+  background-color:lightgray;
+  padding: 1.5rem;
+  display:flex;
+  flex-direction:column;
+}
+
+#linea-temporal, #raices-religiosas_filosoficas, #figuras-importantes {
+  margin: 2rem;
+}
+
+#linea-temporal {
+  padding:1.5rem;
+  background-color:black;
+  color:white;
+}
+
+#raices-religiosas_filosoficas {
+  padding:1.5rem;
+  background-color:lightgrey;
+}
+
+#caracteristicas {
+  padding:3rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+#tabla-caracteristicas {
+  border-collapse:collapse;
+  margin:2rem;
+}
+
+#tabla-caracteristicas td, #tabla-caracteristicas th {
+  border-style:solid;
+  border-color:black;
+  border-width:3px;
 }
